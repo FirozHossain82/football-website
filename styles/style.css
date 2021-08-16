@@ -10,11 +10,87 @@
 /* ---------------------------
     common style  start 
 ------------------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1050px;
+    
+    
+} */
+
+/* header start */
+
+header{
+    background-color: rgb(40, 40, 161);
+    margin-bottom: 70px;
+}
+.header-container{
+    transition: 1s ease-in-out;
+}
+.header-container:hover{
+    transform: scale(1.2);
+}
+
+@keyframes sliding {
+    0%{
+        color:limegreen;
+    }
+    25%{
+        color:rgb(238, 124, 143);
+       
+    }
+    50%{
+        color:#f7c606;
+    }
+    75%{
+        color: #2aa714;
+    }
+    
+    100%{
+        color: red;
+    }
+}
 
 
+.header-container:hover .animation{
+    transform: 2s;
+    animation-play-state: running;
+    animation: sliding 6s ease-in-out .5s infinite alternate;
+}
+.header-details{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 170px;
 
-
-
-/* ---------------------------
-    common style  end 
-------------------------------*/
+}
+.header-info h1{
+    font-size: 64px;
+    color:#FFFFFF;
+    width: 485px;
+    height: 230px;
+   
+}
+.header-info button{
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    border: 0px;
+    color:  #FFFFFF;
+    font-size: 16px;
+    margin-top: 24px; 
+    
+}
+.header-banner img{
+    width:556.01px;
+    height:438px;
+    border-radius:0;
+    margin: 153px 140px 82px 0px ;
+}
